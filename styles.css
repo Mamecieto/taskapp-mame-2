@@ -1,0 +1,353 @@
+/* ================= FUENTES ================= */
+
+@font-face {
+    font-family: 'Etna';
+    src: url('./fonts/Etna.ttf') format('truetype');
+}
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body {
+    background-color: #66c7c9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+    font-family: 'Contrail One', sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+    width: 95%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #d9d9d9;
+    border: 3px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* PANTALLA BIENVENIDA */
+
+.pantalla-bienvenida {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 🔥 CENTRADO PERFECTO DEL BLOQUE IZQUIERDO */
+.lado-izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lado-izquierdo h1 {
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    font-family: 'Etna', sans-serif;
+}
+
+.lado-izquierdo p {
+    font-size: 32px;
+    line-height: 1.6;
+}
+
+/* CUADRO BOTONES */
+
+.cuadro-botones {
+    width: 320px;
+    height: 260px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button {
+    padding: 15px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    font-family: 'Etna', sans-serif;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Etna', sans-serif;
+}
+
+/* CONTENIDO CENTRO */
+
+.contenido-centro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Etna', sans-serif;
+}
+
+/* FORMULARIO */
+
+.cuadro-formulario {
+    width: 520px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: #d9d9d9;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grupo label {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.grupo input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #999;
+    background-color: #e6e6e6;
+}
+
+.grupo-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grupo-columna label {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.grupo-columna input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #999;
+    background-color: #e6e6e6;
+}
+
+.btn-crear,
+.btn-ingresar {
+    margin-top: 40px;
+    padding: 15px 60px;
+    font-size: 20px;
+    background-color: #d4d4d4;
+    border: 3px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Etna', sans-serif;
+}
+
+.btn-crear:hover,
+.btn-ingresar:hover {
+    background-color: #bfbfbf;
+}
+
+.login-link {
+    position: absolute;
+    bottom: 30px;   /* separación desde abajo */
+    right: 40px;    /* separación desde la derecha */
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+/* PANEL */
+
+.panel {
+    width: 90%;
+    max-width: 900px;
+    min-height: 1200px;
+    background-color: #dcdcdc;
+    border: 6px solid black;
+    padding: 60px;
+    box-sizing: border-box;
+    margin: 40px auto;
+}
+
+.panel-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Etna', sans-serif;
+}
+
+.cerrar-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Etna', sans-serif;
+}
+
+.cerrar-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: center;   /* centrado horizontal */
+        padding: 20px;
+        height: auto;
+    }
+
+    .pantalla-bienvenida {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lado-izquierdo h1 {
+        font-size: 50px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 18px;
+    }
+
+    .cuadro-botones {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .contenedor-principal {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;   /* 🔥 esto lo centra */
+    }
+
+    .cuadro-formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .grupo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grupo label {
+        width: auto;
+    }
+
+    .panel {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .panel-superior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+}
+/* 🔥 LOGO en celular */
+.logo {
+    position: static;     /* deja de ser absoluto */
+    text-align: right;    /* se va a la derecha */
+    margin-bottom: 10px;
+}
+
+/* 🔥 REGISTRARSE en celular */
+.login-link {
+    position: static;     /* deja de ser absoluto */
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

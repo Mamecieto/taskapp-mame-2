@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<title>Panel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="contenedor-principal panel">
+
+    <div class="panel-superior">
+        <p id="saludo"></p>
+        <button class="cerrar-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Mostrar nombre del usuario guardado
+    const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+    if(usuario){
+        document.getElementById("saludo").textContent = "Hola " + usuario.nombre;
+    } else {
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>
